@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Other-forms</title>
+</head>
+<body>
+        <div>
+            <label for="name">UserName</label><br>
+            <input type="text" id="name" placeholder="Enter Your Name">
+        </div>
+
+        <br><br>
+
+        <div>
+            <label for="password">Password</label><br>
+            <input type="password" id="password" placeholder="Enter Your Password">
+        </div>
+
+        <div>
+            <label for="message">Message</label><br>
+            <textarea id="message"
+                      placeholder="Message"
+                      rows="5"
+                      cols="50">
+            </textarea>
+        </div>
+
+        <br>
+
+        <!--select-->
+        <label for="language">Select your language</label><br>
+        <select id="language">
+            <option value="java">Java</option>
+            <option value="python">Python</option>
+            <option value="C++">C++</option>
+            <option value="C#">C#</option>
+
+        </select>
+
+        <br><br>
+
+        <!--optgroup-->
+        <label for="tech ">Select your tech</label>
+        <select id="tech ">
+            <optgroup label="languages">
+                <option value="java">Java</option>
+                <option value="Python">Python</option>
+                <option value="Python">Python</option>
+            </optgroup>
+
+            <optgroup label="Frameworks">
+                <option value="springboot">Springboot</option>
+                <option value="ReactJs">ReactJs</option>
+                <option value="NextJs">NextJs</option>
+            </optgroup>
+
+        </select>
+
+        <br><br>
+
+        <select id="programming ">
+            <optgroup label="languages">
+                <option >Java</option>
+                <option >Python</option>
+                <option >Python</option>
+            </optgroup>
+
+            <optgroup label="Frameworks">
+                <option >Springboot</option>
+                <option >ReactJs</option>
+                <option >NextJs</option>
+            </optgroup>
+        </select>
+
+        <br><br>
+
+        <!-- Data List -->
+        <div>
+            <label for="country">Search your country</label><br>
+            <input type="text" id="country" placeholder="Enter your country " list="countries">
+            <datalist id="countries">
+                <option>US</option>
+                <option>UK</option>
+                <option>Srilanka</option>
+                <option>India</option>
+            </datalist>
+        </div>
+
+        <br><br>
+
+        <fieldset>
+            <legend>Select your Gender</legend>
+            <input type="radio" id="male" name="gender"><label for="male">Male</label>
+            <input type="radio" id="female" name="gender"><label for="female">Female</label>
+        </fieldset>
+
+        <br><br>
+
+        <button type="button" >Click</button>
+
+        <br><br>
+
+        <input type="button" value="click">
+
+        <br><br>
+
+        <form oninput="result.value=parseInt(a.value) + parseInt(b.value)">
+
+            <input type="range" id="a" name="a" value="10">
+            +
+            <input type="number" id="b" name="b" value="20">
+            =
+            <output name="result">30</output>
+
+        </form>
+
+</body>
+</html>
